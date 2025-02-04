@@ -1,7 +1,7 @@
 {
   "name": "first-react",
-  "homepage": "https://Davidobadun.github.io/React-Travel-Journal",
   "private": true,
+  "homepage": "https://Davidobadun.github.io/chef-claude-app",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,13 +9,18 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.33.1",
+    "@huggingface/inference": "^2.8.1",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
     "gh-pages": "^6.3.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
@@ -28,5 +33,10 @@
     "eslint-plugin-react-refresh": "^0.4.14",
     "globals": "^15.12.0",
     "vite": "^6.0.1"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

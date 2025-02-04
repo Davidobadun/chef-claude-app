@@ -1,23 +1,28 @@
-import HeaderComponent from "./components/Header.Jsx"
-import Entry from "./components/Entry.jsx"
-import data from "/data.js"
+import React from "react"
+import Navbar from "./components/Navbar.jsx"
+import Main from "./components/Main.jsx"
+import { useState } from "react"
+
+
+
+//token = os.environ['HF_ACCESS_TOKEN']
+//console.log(token)
 
 
 
 function App() {
-    const entryElements = data.map((journalEntry) => {
-        return (
-            <Entry
-                key={journalEntry.id}
-                entry={journalEntry}
-            />)
-    })
+    
+
     return (
         <>
-            <HeaderComponent />
-            {entryElements}
+
+            <Navbar />
+            <Main />
+
         </>
     )
 }
 export default App
+
+
 
