@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "start": "serve -s build"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.33.1",
@@ -22,7 +23,8 @@
     "gh-pages": "^6.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-markdown": "^9.0.3"
+    "react-markdown": "^9.0.3",
+    "serve": "^14.2.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
