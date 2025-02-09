@@ -6,7 +6,7 @@ export async function getRecipeFromChefClaude(ingredientsArr) {
     
     try {
         // Make a POST request to your backend
-        const response = await axios.post("http://localhost:5000/api/get-recipe", {
+        const response = await axios.post("https://chef-claude-app.onrender.com/api/get-recipe", {
             ingredients: ingredientsArr,  
         });
 
