@@ -1,7 +1,7 @@
 import express from 'express';
 import axios from 'axios';
 import dotenv from 'dotenv';
-import cors from 'cors'
+import cors from 'cors';
 
 
 
@@ -14,6 +14,10 @@ const port = 5000; // Backend port
 // Middleware to parse JSON bodies
 app.use(express.json());
 app.use(cors({ origin: '*' }));
+
+app.get('/healthz', async (req, res) => {
+    return res.status(200).send("Health check");
+});
 
 
 // API endpoint for interacting with Claude AI
