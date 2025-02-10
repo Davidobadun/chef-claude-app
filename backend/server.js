@@ -13,6 +13,9 @@ dotenv.config();
 const app = express();
 const port = 5000; // Backend port
 
+// Trust the proxy for accurate IP address detection (for Render)
+app.set('trust proxy', 1);
+
 const limiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
     max: 50, // Limit each IP to 50 requests per window
